@@ -28,9 +28,9 @@ createOrder(cart , function(cart){
 
 // Order is created by 'createOrder'API and then it will call the payments function . we can have further APIs to have the order summary and updating the wallet. We will again use callback functions. 
 
-createOrder(cart , function(cart){
-    proceedToPayment(orderId , function(orderId){
-        getSummary(paymentInfo , function(paymentInfo){
+createOrder(cart , function(orderId){
+    proceedToPayment(orderId , function(paymentInfo){
+        getSummary(paymentInfo , function(){
             updateWallet(paymentInfo);
     });
 });

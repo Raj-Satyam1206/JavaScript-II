@@ -11,6 +11,8 @@
 console.log(this); //returns the Global Object(window)
 
 
+
+
 //2.
 /* this INSIDE A FUNCTION::
     - Inside a function, the value of "this" can be undefined in strict mode or the global object in non-strict mode.
@@ -52,6 +54,8 @@ window.fun();  //Global Object
 
 
 
+
+
 //4.
 /* this INSIDE AN OBJECT'S METHOD 
 Q. Difference b/w function & method?
@@ -69,6 +73,8 @@ const obj = {
 };
 
 obj.printName();
+
+
 
 
 
@@ -110,6 +116,8 @@ obj.printName();
         //'this' value in obj2{} will be the object itself.
 
 
+
+        
 //6.
 /* this INSIDE DOM::
 
